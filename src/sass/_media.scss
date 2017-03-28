@@ -1,0 +1,29 @@
+@media screen and(max-width: 768px){
+	.logo, .menu{
+		margin: auto;
+		text-align: center;
+		margin-top: 40px;
+		padding: 0 !important;
+
+		table{
+			margin: auto;
+			text-align: center;
+		}
+	}
+	.menu__menu-desk, .header .menu{
+		float: none !important;
+	}
+	.header__row2{
+		margin-top: 15px !important;
+	}
+	.content{
+		text-align: center;
+	}
+}
+
+@media screen and(max-width: 1024px){
+	.content{
+		padding:0 0 0 40px !important;
+	}
+
+}
