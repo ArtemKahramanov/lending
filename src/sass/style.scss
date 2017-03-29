@@ -1,5 +1,6 @@
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../src/sass/_header.scss";
+@import "../src/sass/_content.scss";
 @import "../src/sass/_media.scss";
 
 @font-face {
@@ -16,7 +17,6 @@
 }
 body{
 	background: white;
-	overflow: hidden;
 }
 .row{
 	padding: 0;
