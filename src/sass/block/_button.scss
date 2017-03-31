@@ -1,4 +1,4 @@
-.send{
+.button{
 	margin-left: 20px;
 	background: $yellow;
 	padding: 10px 28px;
@@ -10,14 +10,9 @@
 	font: 12px "Ubuntu-M", Arial;
 	cursor: pointer;
 }
-.order{
-	background: $yellow;
+.button--order{
 	border-radius: 25px;
 	padding: 10px 15px;
-	border: none;
-	font: 12px "Ubuntu-M", Arial;
-	color: #333;
 	display: block;
 	margin: auto;
-	cursor: pointer;
 }

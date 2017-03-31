@@ -11,23 +11,21 @@
 .footer__logo{
 	display: flex;
 	align-items: center;
+}
+.logotype--footer{
+	padding-right: 10px;
+	border-right: 1px solid #525252;
+}
 
-	.logo__title{
-		padding-right: 10px;
-		border-right: 1px solid #525252;
+.footer__logo-desc{
+	color: white;
+	line-height: 1.5;
+	padding-left: 10px;
+	font: 10px "Ubuntu-L", Arial;
+	margin-right: 80px;
 
-	}
-
-	.footer__logo-desc{
-		color: white;
+	& div{
 		line-height: 1.5;
-		padding-left: 10px;
-		font: 10px "Ubuntu-L", Arial;
-		margin-right: 80px;
-
-		& div{
-			line-height: 1.5;
-		}
 	}
 }
 .footer__contact{
@@ -48,18 +46,18 @@
 	i{
 		padding-right: 5px;
 		color: #8f8b90;
-	}
-	i:hover{
-		color: white;
+	
+		&:hover{
+			color: white;
+		}
 	}
 }
 .footer__copyright{
 	display: flex;
 	align-items: center;
-
-	.copy__text{
-		font: 12px "Ubuntu-L", Arial;
-		color: white;
-		margin: 0;
-	}
+}
+.copy__text{
+	font: 12px "Ubuntu-L", Arial;
+	color: white;
+	margin: 0;
 }

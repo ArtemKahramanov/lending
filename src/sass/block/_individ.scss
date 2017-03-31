@@ -1,6 +1,6 @@
 .individ{
 	height: 420px;
-	background: url('../img/individ.jpg');
+	background: url('../img/individ.jpg') center center #2B212C;
 }
 .individ__content{
 	width: 740px;
@@ -8,20 +8,19 @@
 	margin: auto;
 	padding: 100px 20px 0 20px;
 
-	.individ__title{
-		color: white;
-		display: block;
-		font:35px "Ubuntu-B", Arial; 
-		max-width: 300px;
-	}
-	.individ__subtitle{
-		color: white;
-		display: block;
-		font:35px "Ubuntu-M", Arial; 
-		max-width: 300px;
-	}
-
 	form{
 		margin-top: 20px;
 	}
+}
+.individ__title{
+	color: white;
+	display: block;
+	font:35px "Ubuntu-B", Arial; 
+	max-width: 300px;
+}
+.individ__subtitle{
+	color: white;
+	display: block;
+	font:35px "Ubuntu-M", Arial; 
+	max-width: 300px;
 }

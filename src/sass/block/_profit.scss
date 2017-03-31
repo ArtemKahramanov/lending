@@ -1,6 +1,6 @@
 .profit{
-
-	.profit__title{
+	
+	&__title{
 		font: 28px "Ubuntu-M", Arial;
 		text-align: center;
 		margin-bottom: 60px;
@@ -27,16 +27,17 @@
 		font: 12px "Ubuntu-M", Arial;
 	}
 }
+
 .benefits{
 	display: flex;
 
-	.benefits__title{
+	&__title{
 		font: 20px "Ubuntu-L", Arial;
 		display: block;
 		margin: 0 0 20px 0;
 	}
 
-	.benefits__list{
+	&__list{
 		list-style-image: url("../img/range.png");
 		padding-left: 10px;
 		font: 10px "Ubuntu-L", Arial;
@@ -46,36 +47,37 @@
 			padding-bottom: 12px;
 		}
 	}
-}
-.benefits__youget{
-	flex-grow: 1;
-	width: 50%;
-	padding: 20px 0 0 20px;
-	border: 1px solid #666666;
-	border-radius: 5px;
-	margin-right: 10px;
-	height: 190px;
-	color: #666666;
-	font: 12px "Ubuntu-L", Arial;
 
-}
-.benefits__support{
-	flex-grow: 1;
-	width: 50%;
-	padding: 20px 5px 0 20px;
-	border: 1px solid #666666;
-	border-radius: 5px;
-	margin-left: 10px;
-	height: 190px;
-	color: #666666;
-	font: 12px "Ubuntu-L", Arial;
+	&__youget{
+		flex-grow: 1;
+		width: 50%;
+		padding: 20px 0 0 20px;
+		border: 1px solid #666666;
+		border-radius: 5px;
+		margin-right: 10px;
+		height: 190px;
+		color: #666666;
+		font: 12px "Ubuntu-L", Arial;
 
-	img{
-		float: right;
 	}
-
-	.benefits__desc{
-		font: 10px "Ubuntu-L", Arial;
-
+	&__support{
+		flex-grow: 1;
+		width: 50%;
+		padding: 20px 5px 0 20px;
+		border: 1px solid #666666;
+		border-radius: 5px;
+		margin-left: 10px;
+		height: 190px;
+		color: #666666;
+		font: 12px "Ubuntu-L", Arial;
+	
+		img{
+			float: right;
+		}
+	
+		.benefits__desc{
+			font: 10px "Ubuntu-L", Arial;
+	
+		}
 	}
 }

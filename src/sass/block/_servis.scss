@@ -8,7 +8,7 @@
 		clear: both;
 	}
 
-	.servis__title{
+	&__title{
 		font: 28px "Ubuntu-M", Arial;
 		text-align: center;
 		margin-bottom: 60px;
@@ -24,18 +24,17 @@
 	padding-top: 80px;
 	margin-bottom: 25px;
 	position: relative;
-		
-	.servis__name{
-		text-align: center;
-		font: 14px "Ubuntu-B", Arial;
-		display: block;
-		margin-bottom: 15px;
-		}
+}
+.servis__name{
+	text-align: center;
+	font: 14px "Ubuntu-B", Arial;
+	display: block;
+	margin-bottom: 15px;
+}
 
-	p{
-		font: 9px "Ubuntu-L", Arial;
-		color: #878787;
-	}
+.servis__desc{
+	font: 9px "Ubuntu-L", Arial;
+	color: #878787;
 }
 .item1::before{
 	content: "";

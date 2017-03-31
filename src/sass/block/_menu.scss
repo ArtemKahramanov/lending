@@ -2,10 +2,10 @@
 	float: right;
 	font: 12px Ubuntu-B, Arial;
 
-		&:after{
-			content: "";
-			clear: both;
-		}
+	&:after{
+		content: "";
+		clear: both;
+	}
 }
 .menu__desc{
 	float: right;
@@ -26,9 +26,10 @@
 			padding-right: 5px;	
 			color: #8f8b90;
 			cursor: pointer;
-		}
-		i:hover{
-			color: white;
+
+			&:hover{
+				color: white;
+			}
 		}
 	}
 
