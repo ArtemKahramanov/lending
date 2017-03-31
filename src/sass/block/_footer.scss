@@ -1,0 +1,65 @@
+.footer-bg{
+	background: #2b212c;
+}
+.footer{
+	width: 860px;
+	margin: auto;
+	float: none;
+	display: flex;
+	padding: 15px 25px;	
+}
+.footer__logo{
+	display: flex;
+	align-items: center;
+
+	.logo__title{
+		padding-right: 10px;
+		border-right: 1px solid #525252;
+
+	}
+
+	.footer__logo-desc{
+		color: white;
+		line-height: 1.5;
+		padding-left: 10px;
+		font: 10px "Ubuntu-L", Arial;
+		margin-right: 80px;
+
+		& div{
+			line-height: 1.5;
+		}
+	}
+}
+.footer__contact{
+	display: flex;
+	align-items: center;
+	font: 14px "Ubuntu-L", Arial;
+	color: white;
+	margin-right: 80px;
+
+	& div{
+		display: inline-block;
+	}
+
+	.footer__phone{
+		margin-right: 20px;
+	}
+
+	i{
+		padding-right: 5px;
+		color: #8f8b90;
+	}
+	i:hover{
+		color: white;
+	}
+}
+.footer__copyright{
+	display: flex;
+	align-items: center;
+
+	.copy__text{
+		font: 12px "Ubuntu-L", Arial;
+		color: white;
+		margin: 0;
+	}
+}

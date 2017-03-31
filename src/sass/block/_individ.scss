@@ -1,0 +1,27 @@
+.individ{
+	height: 420px;
+	background: url('../img/individ.jpg');
+}
+.individ__content{
+	width: 740px;
+	float: none;
+	margin: auto;
+	padding: 100px 20px 0 20px;
+
+	.individ__title{
+		color: white;
+		display: block;
+		font:35px "Ubuntu-B", Arial; 
+		max-width: 300px;
+	}
+	.individ__subtitle{
+		color: white;
+		display: block;
+		font:35px "Ubuntu-M", Arial; 
+		max-width: 300px;
+	}
+
+	form{
+		margin-top: 20px;
+	}
+}

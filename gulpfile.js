@@ -1,18 +1,28 @@
 'use strict';
  
 var gulp = require('gulp'),
- 	browserSync = require('browser-sync'),
-    sass = require('gulp-sass');
+ 	  browserSync = require('browser-sync'),
+    sass = require('gulp-sass'),
+    spritesmith = require('gulp.spritesmith');
+ 
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('./src/img/sprite/*.png')
+  .pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.scss'
+  }));
+  return spriteData.pipe(gulp.dest('./src/img/sprite/'));
+});
 
 gulp.task('sass', function () {
  return  gulp.src('./src/sass/style.scss')
- 	.pipe(sass({
- 		includePaths:['./node_modules/']
- 	}))
+  .pipe(sass({
+    includePaths:['./node_modules/']
+  }))
     .on('error', sass.logError)
     .pipe(gulp.dest('./dist/css/'))
     .pipe(browserSync.reload({
-    	stream: true
+      stream: true
     }));
 });
 
@@ -35,9 +45,9 @@ gulp.task('html:watch', function () {
 
 gulp.task('script', function () {
  return  gulp.src('./src/scripts/**/*.js')
- 	.pipe(gulp.dest('./dist/scripts/'))
+  .pipe(gulp.dest('./dist/scripts/'))
     .pipe(browserSync.reload({
-    	stream: true
+      stream: true
     }))
     ;
 });
@@ -64,5 +74,3 @@ gulp.task('fonts', function(){
 });
 
 gulp.task('default',['browser-sync', 'sass:watch', 'html:watch', 'script:watch', 'images', 'fonts']);
-
-

@@ -1,0 +1,72 @@
+.servis{
+	float: none;
+	width: 100%;
+
+	&:after{
+		content: '.';
+		color: transparent;
+		clear: both;
+	}
+
+	.servis__title{
+		font: 28px "Ubuntu-M", Arial;
+		text-align: center;
+		margin-bottom: 60px;
+		margin-top: 25px;
+		display: block;
+	}
+}
+.servis__banerfit{
+	display: flex;
+}
+.servis__item{
+	flex-grow: 1;
+	padding-top: 80px;
+	margin-bottom: 25px;
+	position: relative;
+		
+	.servis__name{
+		text-align: center;
+		font: 14px "Ubuntu-B", Arial;
+		display: block;
+		margin-bottom: 15px;
+		}
+
+	p{
+		font: 9px "Ubuntu-L", Arial;
+		color: #878787;
+	}
+}
+.item1::before{
+	content: "";
+	position: absolute;
+    top: 20px;
+    right: 65px;
+	@include sprite($design);
+}
+.item2::before{
+	content: "";
+	position: absolute;
+    top: 20px;
+    right: 81px;
+	@include sprite($security);
+}
+.item3::before{
+	content: "";
+	position: absolute;
+    top: 20px;
+    right: 74px;
+	@include sprite($featlist);
+}
+
+.item4::before{
+	content: "";
+	position: absolute;
+    top: 20px;
+    right: 77px;
+	@include sprite($idea);
+}
+
+
+
+

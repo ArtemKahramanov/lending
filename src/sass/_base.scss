@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Ubuntu-L;
+    src: url(../fonts/Font_Ubuntu/Ubuntu-L.ttf);
+}
+@font-face {
+    font-family: Ubuntu-B;
+    src: url(../fonts/Font_Ubuntu/Ubuntu-B.ttf);
+}
+@font-face {
+    font-family: Ubuntu-C;
+    src: url(../fonts/Font_Ubuntu/Ubuntu-M.ttf);
+}
+body{
+	background: white;
+}
+.container{
+	padding: 0;
+	margin: 0;
+	width: 740px;
+	margin: auto;
+}
+.container-fluid{
+	padding: 0
+}
+a{
+	color: white;
+}
+a:hover, a:active, a:focus{
+	text-decoration: none;
+	color: white;
+}

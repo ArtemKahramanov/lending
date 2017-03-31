@@ -1,0 +1,134 @@
+ // SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$design-name: 'design';
+$design-x: 0px;
+$design-y: 0px;
+$design-offset-x: 0px;
+$design-offset-y: 0px;
+$design-width: 46px;
+$design-height: 44px;
+$design-total-width: 110px;
+$design-total-height: 81px;
+$design-image: 'sprite.png';
+$design: (0px, 0px, 0px, 0px, 46px, 44px, 110px, 81px, 'sprite.png', 'design', );
+$featlist-name: 'featlist';
+$featlist-x: 46px;
+$featlist-y: 0px;
+$featlist-offset-x: -46px;
+$featlist-offset-y: 0px;
+$featlist-width: 38px;
+$featlist-height: 36px;
+$featlist-total-width: 110px;
+$featlist-total-height: 81px;
+$featlist-image: 'sprite.png';
+$featlist: (46px, 0px, -46px, 0px, 38px, 36px, 110px, 81px, 'sprite.png', 'featlist', );
+$idea-name: 'idea';
+$idea-x: 0px;
+$idea-y: 44px;
+$idea-offset-x: 0px;
+$idea-offset-y: -44px;
+$idea-width: 32px;
+$idea-height: 37px;
+$idea-total-width: 110px;
+$idea-total-height: 81px;
+$idea-image: 'sprite.png';
+$idea: (0px, 44px, 0px, -44px, 32px, 37px, 110px, 81px, 'sprite.png', 'idea', );
+$range-name: 'range';
+$range-x: 84px;
+$range-y: 40px;
+$range-offset-x: -84px;
+$range-offset-y: -40px;
+$range-width: 9px;
+$range-height: 9px;
+$range-total-width: 110px;
+$range-total-height: 81px;
+$range-image: 'sprite.png';
+$range: (84px, 40px, -84px, -40px, 9px, 9px, 110px, 81px, 'sprite.png', 'range', );
+$security-name: 'security';
+$security-x: 84px;
+$security-y: 0px;
+$security-offset-x: -84px;
+$security-offset-y: 0px;
+$security-width: 26px;
+$security-height: 40px;
+$security-total-width: 110px;
+$security-total-height: 81px;
+$security-image: 'sprite.png';
+$security: (84px, 0px, -84px, 0px, 26px, 40px, 110px, 81px, 'sprite.png', 'security', );
+$spritesheet-width: 110px;
+$spritesheet-height: 81px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($design, $featlist, $idea, $range, $security, );
+$spritesheet: (110px, 81px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../img/sprite/sprite.png);
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

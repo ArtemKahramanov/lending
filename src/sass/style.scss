@@ -1,31 +1,15 @@
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../src/sass/_header.scss";
-@import "../src/sass/_content.scss";
-@import "../src/sass/_media.scss";
-
-@font-face {
-    font-family: Ubuntu-L;
-    src: url(../fonts/Font_Ubuntu/Ubuntu-L.ttf);
-}
-@font-face {
-    font-family: Ubuntu-B;
-    src: url(../fonts/Font_Ubuntu/Ubuntu-B.ttf);
-}
-@font-face {
-    font-family: Ubuntu-C;
-    src: url(../fonts/Font_Ubuntu/Ubuntu-M.ttf);
-}
-body{
-	background: white;
-}
-.row{
-	padding: 0;
-	margin: 0;
-}
-a{
-	color: white;
-}
-a:hover, a:active, a:focus{
-	text-decoration: none;
-	color: white;
-}
+@import "sprite";
+@import "block/header";
+@import "block/content";
+@import "block/logo";
+@import "block/menu";
+@import "block/input";
+@import "block/button";
+@import "block/servis";
+@import "block/profit";
+@import "block/individ";
+@import "block/map";
+@import "block/footer";
+@import "base";
+@import "media";

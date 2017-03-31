@@ -1,0 +1,86 @@
+$yellow: #ffd801;
+
+.hedader-bg{
+	background: url(../img/header_bg.jpg);
+	background-size: cover;
+	height: 617px;
+}
+
+.header{
+	height: 617px;
+	color: white;
+}
+
+.header__top-row{
+	padding: 40px 20px;
+}
+
+	.header__content{
+		margin-top: 20px;
+
+		.head-content{
+			padding-left: 100px;
+			padding-right: 0;
+			position: relative;
+
+			.subtitle{
+				font:35px "Ubuntu-B", Arial; 
+				position: relative;
+				margin-bottom: 5px;
+
+				&:before{
+					content: "";
+					position: absolute;
+					height: 35px;
+					background: $yellow;
+					width: 6px;
+					left: -25px;
+					top: 5px;
+				}
+			}
+
+			.title{
+				display: block;
+				font: 34px "Ubuntu-L", Arial;
+				margin: 0;
+			}
+
+			p{
+				margin-top: 20px;
+				font: 12px "Ubuntu-L", Arial;
+			}
+
+			.header__list{
+				padding: 0;
+				margin: 40px 0 0 25px;
+				font: 12px "Ubuntu-L", Arial;
+
+				li{
+					display: inline-block;
+					margin-right: 60px;
+					position: relative;
+
+					&:before{
+						content: "";
+						position: absolute;
+						@include sprite($range);
+						height: 9px;
+						width: 9px;
+						top: 2px;
+						left: -15px;
+					}
+				}
+			}
+		}		
+	}
+
+.head-content__form{
+	margin-top: 60px;
+
+	.form_desc{
+		display: block;
+		font: 12px "Ubuntu-L", Arial;
+		margin: 15px 0 0 25px;
+		color: #a8a7a8;
+	}
+}

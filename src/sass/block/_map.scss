@@ -1,0 +1,21 @@
+.map{
+	height: 550px;
+	position: relative;
+}
+.contacts{
+	position: absolute;
+    left: 40%;
+    top: 45%;
+
+		.contacts__we{
+			font: 38px "Ubuntu-B", Arial;
+			color: #2c232b;
+			display: block;
+		}
+
+		.contacts__town{
+			font: 38px "Ubuntu-M", Arial;
+			color: #2c232b;
+			display: block;
+		}
+}

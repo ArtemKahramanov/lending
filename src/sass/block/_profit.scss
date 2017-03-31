@@ -1,0 +1,81 @@
+.profit{
+
+	.profit__title{
+		font: 28px "Ubuntu-M", Arial;
+		text-align: center;
+		margin-bottom: 60px;
+		margin-top: 45px;
+		display: block;
+	}
+}
+
+.features__block{
+	display: flex;
+	align-items: flex-end;
+}
+.features__girl, .features__desc{
+	flex-grow: 1;
+	width: 50%;
+	margin-bottom: 35px;
+
+	.features__caption{
+		font: 15px "Ubuntu-M", Arial;
+		margin-bottom: 30px;
+	}
+
+	.features__inform{
+		font: 12px "Ubuntu-M", Arial;
+	}
+}
+.benefits{
+	display: flex;
+
+	.benefits__title{
+		font: 20px "Ubuntu-L", Arial;
+		display: block;
+		margin: 0 0 20px 0;
+	}
+
+	.benefits__list{
+		list-style-image: url("../img/range.png");
+		padding-left: 10px;
+		font: 10px "Ubuntu-L", Arial;
+		line-height: 1.3;
+
+		li{
+			padding-bottom: 12px;
+		}
+	}
+}
+.benefits__youget{
+	flex-grow: 1;
+	width: 50%;
+	padding: 20px 0 0 20px;
+	border: 1px solid #666666;
+	border-radius: 5px;
+	margin-right: 10px;
+	height: 190px;
+	color: #666666;
+	font: 12px "Ubuntu-L", Arial;
+
+}
+.benefits__support{
+	flex-grow: 1;
+	width: 50%;
+	padding: 20px 5px 0 20px;
+	border: 1px solid #666666;
+	border-radius: 5px;
+	margin-left: 10px;
+	height: 190px;
+	color: #666666;
+	font: 12px "Ubuntu-L", Arial;
+
+	img{
+		float: right;
+	}
+
+	.benefits__desc{
+		font: 10px "Ubuntu-L", Arial;
+
+	}
+}

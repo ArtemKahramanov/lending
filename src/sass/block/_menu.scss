@@ -1,0 +1,47 @@
+.menu{
+	float: right;
+	font: 12px Ubuntu-B, Arial;
+
+		&:after{
+			content: "";
+			clear: both;
+		}
+}
+.menu__desc{
+	float: right;
+
+	.menu__social{
+		display: block;
+		text-align: center;
+		float: right;
+	}
+
+	.menu__social > div{
+		font-size: 9px;
+		padding-top: 10px;
+		display: inline-block;
+
+		i{
+			font-size: 14px;
+			padding-right: 5px;	
+			color: #8f8b90;
+			cursor: pointer;
+		}
+		i:hover{
+			color: white;
+		}
+	}
+
+	.menu__butt{
+		cursor: pointer;
+		padding:0 8px 0 20px;
+		float: right;
+
+		i{
+		display: block;
+		border: 2px solid #ffd801;
+		font-size: 15px;
+		padding: 7px 9px;
+		}
+	}
+}
