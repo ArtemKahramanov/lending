@@ -1,0 +1,56 @@
+.tablet{
+	margin-top: 102px;
+	position: relative;
+
+	&__items{
+		position: absolute;
+		color: #333;
+    	top: 50px;
+    	left: 140px;
+	}
+
+	&__list{
+		font: 12px "Ubuntu-L", Arial; 
+		list-style-type: none;
+
+		b{	
+			display: block;
+			font: 12px "Ubuntu-B", Arial; 
+			margin-bottom: 3px; 
+		}
+
+		li{
+			margin-bottom: 15px;
+			position: relative;
+		}
+
+		.unicle:before{
+			content: "";
+			position: absolute;
+			left: -30px;
+			top: 5px;
+			@include sprite($first);
+		}
+		.technologies:before{
+			content: "";
+			position: absolute;
+			left: -30px;
+			top: 5px;
+			@include sprite($second);
+		}
+		.terms:before{
+			content: "";
+			position: absolute;
+			left: -30px;
+			top: 5px;
+			@include sprite($third);
+		}
+		.communications:before{
+			content: "";
+			position: absolute;
+			left: -30px;
+			top: 5px;
+			@include sprite($four);
+		}
+	}
+}

@@ -1,12 +1,12 @@
 .individ{
 	height: 420px;
 	background: url('../img/individ.jpg') center center #2B212C;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .individ__content{
-	width: 740px;
-	float: none;
-	margin: auto;
-	padding: 100px 20px 0 20px;
+	margin-right: 30px;
 
 	form{
 		margin-top: 20px;
@@ -15,12 +15,12 @@
 .individ__title{
 	color: white;
 	display: block;
-	font:35px "Ubuntu-B", Arial; 
+	font:35px "Ubuntu-M", Arial; 
 	max-width: 300px;
 }
 .individ__subtitle{
 	color: white;
 	display: block;
-	font:35px "Ubuntu-M", Arial; 
+	font:35px "Ubuntu-B", Arial; 
 	max-width: 300px;
 }

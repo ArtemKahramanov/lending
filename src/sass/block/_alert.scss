@@ -1,0 +1,40 @@
+.alert{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.96);
+	z-index: 1;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	padding-top: 500px;
+
+	&__content{
+		color: white;
+		position: relative;
+	}
+
+	hr{
+		margin: 30px 0;
+	}
+
+	&__title{
+		text-align: center;
+		text-transform: uppercase;
+		font: 20px 'Ubuntu-B', Arial
+	}
+
+	&__text{
+		text-align: center;
+		font: 16px 'Ubuntu-L', Arial; 
+	}
+
+	&__linck{
+		display: block;
+		font: 20px 'Ubuntu-M', Arial;
+		color: #666;
+		border-bottom: 1px solid #666;
+		text-transform: uppercase;
+		margin-top: 30px;
+	}
+}

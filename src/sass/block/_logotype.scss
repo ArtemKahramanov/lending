@@ -1,0 +1,29 @@
+.logotype{
+	font:38px "Ubuntu-L", Arial;
+	margin: 0px;
+	border: none;
+	color: white;
+
+	&__span{
+		color: $yellow;
+	}
+
+	&__desc{
+		font-size: 10px;
+		position: relative;
+	}
+	&__left div{
+		display: block;
+		padding-right: 7px;
+		border-right: 1px solid #525252;
+	}
+
+	&__right div{
+		display: block;
+		padding-left: 7px;
+	}
+
+	&__left, &__right{
+		display: inline-block;
+	}
+}

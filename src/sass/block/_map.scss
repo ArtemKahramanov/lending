@@ -1,3 +1,6 @@
+.section__map{
+	width: 100%;
+}
 .map{
 	height: 550px;
 	position: relative;
@@ -6,6 +9,7 @@
 	position: absolute;
     left: 40%;
     top: 45%;
+    width: 400px;
 
 		&__we{
 			font: 38px "Ubuntu-B", Arial;

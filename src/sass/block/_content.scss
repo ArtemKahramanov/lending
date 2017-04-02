@@ -1,6 +1,5 @@
 .content{
-    padding: 38px 0;
-    width: 740px;
+    @include screen-md(740px);
     margin: auto;
     float: none;
 }

@@ -1,14 +1,21 @@
+@mixin screen-md($width){
+	width: $width;
+}
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
 @import "sprite";
+@import "block/alert";
 @import "block/header";
 @import "block/content";
-@import "block/logo";
+@import "block/logotype";
+@import "block/title";
+@import "block/head-content";
 @import "block/menu";
 @import "block/input";
 @import "block/button";
 @import "block/servis";
 @import "block/profit";
 @import "block/individ";
+@import "block/tablet";
 @import "block/map";
 @import "block/footer";
 @import "base";

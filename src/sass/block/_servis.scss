@@ -6,51 +6,55 @@
 		content: '.';
 		color: transparent;
 		clear: both;
+		float: right;
 	}
 
 	&__title{
-		font: 28px "Ubuntu-M", Arial;
+	    font: 26px 'Ubuntu-M', sans-serif;
+	    text-align: center;
+	    margin-bottom: 47px;
+	    padding-top: 15px;
+	    display: block;
+	}
+
+	&__banner{
+		display: flex;
+	}
+
+	&__item{
+		flex-grow: 1;
+		padding-top: 80px;
+		margin-bottom: 15px;
+		position: relative;
+	}
+
+	&__name{
 		text-align: center;
-		margin-bottom: 60px;
-		margin-top: 25px;
+		font: 14px "Ubuntu-B", Arial;
 		display: block;
+		margin-bottom: 15px;
+	}
+
+	&__desc{
+		font: 9px "Ubuntu-L", Arial;
+		color: #878787;
 	}
 }
-.servis__banerfit{
-	display: flex;
-}
-.servis__item{
-	flex-grow: 1;
-	padding-top: 80px;
-	margin-bottom: 25px;
-	position: relative;
-}
-.servis__name{
-	text-align: center;
-	font: 14px "Ubuntu-B", Arial;
-	display: block;
-	margin-bottom: 15px;
-}
-
-.servis__desc{
-	font: 9px "Ubuntu-L", Arial;
-	color: #878787;
-}
-.item1::before{
+.design::before{
 	content: "";
 	position: absolute;
     top: 20px;
     right: 65px;
 	@include sprite($design);
 }
-.item2::before{
+.secutity::before{
 	content: "";
 	position: absolute;
     top: 20px;
     right: 81px;
 	@include sprite($security);
 }
-.item3::before{
+.featlist::before{
 	content: "";
 	position: absolute;
     top: 20px;
@@ -58,14 +62,10 @@
 	@include sprite($featlist);
 }
 
-.item4::before{
+.ideas::before{
 	content: "";
 	position: absolute;
     top: 20px;
     right: 77px;
 	@include sprite($idea);
 }
-
-
-
-

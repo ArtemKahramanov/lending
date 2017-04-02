@@ -1,22 +1,21 @@
 .menu{
 	float: right;
 	font: 12px Ubuntu-B, Arial;
+	float: right;
+	padding: 8px 15px;
 
 	&:after{
 		content: "";
 		clear: both;
 	}
-}
-.menu__desc{
-	float: right;
 
-	.menu__social{
+	&__social{
 		display: block;
 		text-align: center;
 		float: right;
 	}
 
-	.menu__social > div{
+	&__social > div{
 		font-size: 9px;
 		padding-top: 10px;
 		display: inline-block;
@@ -33,7 +32,7 @@
 		}
 	}
 
-	.menu__butt{
+	&__butt{
 		cursor: pointer;
 		padding:0 8px 0 20px;
 		float: right;
@@ -46,3 +45,72 @@
 		}
 	}
 }
+.active-menu{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.9);
+	z-index: 1;
+	display: none;
+	// opacity: 0;
+	justify-content: center;
+    align-items: flex-end;
+}
+.menu-list{
+	list-style-type: none;
+	padding: 0;
+	position: relative;
+	padding-left: 100px;
+
+	.active{
+		color: $yellow;
+	}	
+
+	li{
+		font: 31px 'Ubuntu-M', Arial;
+		margin-bottom: 60px;
+		text-transform: uppercase;
+		position: relative;
+
+		&:hover{
+			color: $yellow;
+		}
+	}
+
+	.lending::before{
+		content: '';
+		position: absolute;
+		@include sprite($lending);
+		left: -100px;
+    	top: -10px;
+	}
+	.we::before{
+		content: '';
+		position: absolute;
+		@include sprite($we);
+		left: -100px;
+    	top: -10px;
+	}
+	.portfolio::before{
+		content: '';
+		position: absolute;
+		@include sprite($portfolio);
+		left: -100px;
+    	top: -10px;
+	}
+	.price::before{
+		content: '';
+		position: absolute;
+		@include sprite($price);
+		left: -100px;
+    	top: -10px;
+	}
+	.contact::before{
+		content: '';
+		position: absolute;
+		@include sprite($contacts);
+		left: -100px;
+    	top: -10px;
+	}
+}
+
