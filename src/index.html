@@ -10,7 +10,7 @@
 	<body>
 	<div class="alert">
 		<div class="alert__content">
-					<button class="butt__close"><i class="fa fa-times" aria-hidden="true"></i></button>
+					<button class="button__close"><i class="fa fa-times" aria-hidden="true"></i></button>
 
 			<h3 class="alert__title">Ваша заявка принята</h3>
 			<p class="alert__text">Наш менеджер свяжется с вами</p>
@@ -24,12 +24,12 @@
 		<header class="header">
 			<div class="active-menu">
 				<ul class="menu-list">
-					<button class="butt__close"><i class="fa fa-times" aria-hidden="true"></i></button>
-					<a href="#"><li class="lending active">Лендинги</li></a>
-					<a href="#"><li class="we">Почему мы</li></a>
-					<a href="#"><li class="portfolio">Портфолио</li></a>
-					<a href="#"><li class="price">Цена</li></a>
-					<a href="#"><li class="contact">Контакты</li></a>
+					<button class="button__close"><i class="fa fa-times" aria-hidden="true"></i></button>
+					<a href="#"><li class="list--lending active">Лендинги</li></a>
+					<a href="#"><li class="list--we">Почему мы</li></a>
+					<a href="#"><li class="list--portfolio">Портфолио</li></a>
+					<a href="#"><li class="list--price">Цена</li></a>
+					<a href="#"><li class="list--contact">Контакты</li></a>
 				</ul>
 			</div>
 			<div class="container">
@@ -59,7 +59,6 @@
 									<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 									<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
 								</div>
-								
 							</div>
 						</div>
 					</div>
@@ -73,7 +72,7 @@
 						<form class="head-content__form">
 							<input class="input" type="text" placeholder="Имя" name="">
 							<input class="input" type="text" placeholder="Телефон" name="">
-							<button onclick="event.preventDefault()" class="button request">Отправить</button>
+							<button class="button button--request">Отправить</button>
 							<span class="form__desc">Перезвоним вам в любое удобное время</span>
 						</form>
 						<ul class="header__list">
@@ -90,25 +89,25 @@
 			<div class="servis">
 				<h2 class="servis__title">Наши преимущества</h2>
 				<div class="servis__banner">
-					<div class="servis__item design">
+					<div class="servis__item servis--design">
 						<h4 class="servis__name">Responsive design</h4>
 						<p class="servis__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 					</div>
-					<div class="servis__item secutity">
+					<div class="servis__item servis--secutity">
 						<h4 class="servis__name">Endless Security</h4>
 						<p class="servis__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 					</div>
-					<div class="servis__item featlist">
+					<div class="servis__item servis--featlist">
 						<h4 class="servis__name">Incredible features</h4>
 						<p class="servis__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 					</div>
-					<div class="servis__item ideas">
+					<div class="servis__item servis--ideas">
 						<h4 class="servis__name">Fresh ideas</h4>
 						<p class="servis__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -157,6 +156,44 @@
 			</div>
 		</div>
 		</main>
+		<section class="portfolio">
+			<h3 class="portfolio__title">Наши работы</h3>
+			<div class="portfolio__slides">
+			<div class="portfolio__left">
+				<img src="img/portfolio/seniors.jpg" alt="">
+				<img src="img/portfolio/bird.jpg" alt="">
+				<img src="img/portfolio/simvol.jpg" alt="">
+				<img src="img/portfolio/equipment.jpg" alt="">
+				<img src="img/portfolio/point.jpg" alt="">
+				<img src="img/portfolio/eat.jpg" alt="">
+				<img src="img/portfolio/technologies.jpg" alt="">
+			</div>
+			<div class="portfolio__center">
+				<img src="img/portfolio/hand.jpg" alt="">
+				<img src="img/portfolio/wauw.jpg" alt="">
+				<img src="img/portfolio/music.jpg" alt="">
+				<img src="img/portfolio/animal.jpg" alt="">
+				<img src="img/portfolio/sleec.jpg" alt="">
+				<img src="img/portfolio/book.jpg" alt="">
+				
+			</div>
+			<div class="portfolio__right">
+				<img src="img/portfolio/robot.jpg" alt="">
+				<img src="img/portfolio/cup.jpg" class="portfolio__right-image" alt="">
+				<img src="img/portfolio/16seck.jpg" alt="">
+				<img src="img/portfolio/football.jpg" alt="">
+				<img src="img/portfolio/tenis.jpg" alt="">
+			</div>
+			</div>
+			<div class="portfolio__desc">
+				<div class="portfolio__cricle">
+					<i class="fa fa-circle" aria-hidden="true"></i>
+					<i class="fa fa-circle-o" aria-hidden="true"></i>
+					<i class="fa fa-circle" aria-hidden="true"></i>
+				</div>
+				<button class="button button--order">Еще работы</button>
+			</div>
+		</section>
 		<section>
 			<div class="individ">
 				<div class="individ__content">
@@ -165,7 +202,7 @@
 					<form class="head-content__form">
 						<input class="input" type="text" placeholder="Имя" name="">
 						<input class="input" type="text" placeholder="Телефон" name="">
-						<button onclick="event.preventDefault()" class="button request">Отправить</button>
+						<button class="button button--request">Отправить</button>
 						<span class="form__desc">Перезвоним вам в любое удобное время</span>
 					</form>
 				</div>
@@ -173,19 +210,19 @@
 					<img src="img/tablet.png" alt="">
 					<div class="tablet__items">
 						<ul class="tablet__list">
-							<li class="unicle">
+							<li class="tablet__unicle">
 								<b>Уникальный</b>
 								Дизайн проект
 							</li>
-							<li class="technologies">
+							<li class="tablet__technologies">
 								<b>Современные</b>
 								технологии
 							</li>
-							<li class="terms">
+							<li class="tablet__terms">
 								<b>Работа в срок</b>
 								Сказал - сделал
 							</li>
-							<li class="communications">
+							<li class="tablet__communications">
 								<b>Всегда на связи</b>
 								и готовы к работе
 							</li>

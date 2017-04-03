@@ -77,35 +77,35 @@
 		}
 	}
 
-	.lending::before{
+	.list--lending::before{
 		content: '';
 		position: absolute;
 		@include sprite($lending);
 		left: -100px;
     	top: -10px;
 	}
-	.we::before{
+	.list--we::before{
 		content: '';
 		position: absolute;
 		@include sprite($we);
 		left: -100px;
     	top: -10px;
 	}
-	.portfolio::before{
+	.list--portfolio::before{
 		content: '';
 		position: absolute;
 		@include sprite($portfolio);
 		left: -100px;
     	top: -10px;
 	}
-	.price::before{
+	.list--price::before{
 		content: '';
 		position: absolute;
 		@include sprite($price);
 		left: -100px;
     	top: -10px;
 	}
-	.contact::before{
+	.list--contact::before{
 		content: '';
 		position: absolute;
 		@include sprite($contacts);

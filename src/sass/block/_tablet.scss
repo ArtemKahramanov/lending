@@ -24,28 +24,28 @@
 			position: relative;
 		}
 
-		.unicle:before{
+		.tablet__unicle:before{
 			content: "";
 			position: absolute;
 			left: -30px;
 			top: 5px;
 			@include sprite($first);
 		}
-		.technologies:before{
+		.tablet__technologies:before{
 			content: "";
 			position: absolute;
 			left: -30px;
 			top: 5px;
 			@include sprite($second);
 		}
-		.terms:before{
+		.tablet__terms:before{
 			content: "";
 			position: absolute;
 			left: -30px;
 			top: 5px;
 			@include sprite($third);
 		}
-		.communications:before{
+		.tablet__communications:before{
 			content: "";
 			position: absolute;
 			left: -30px;

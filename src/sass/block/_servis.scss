@@ -40,21 +40,21 @@
 		color: #878787;
 	}
 }
-.design::before{
+.servis--design::before{
 	content: "";
 	position: absolute;
     top: 20px;
     right: 65px;
 	@include sprite($design);
 }
-.secutity::before{
+.servis--secutity::before{
 	content: "";
 	position: absolute;
     top: 20px;
     right: 81px;
 	@include sprite($security);
 }
-.featlist::before{
+.servis--featlist::before{
 	content: "";
 	position: absolute;
     top: 20px;
@@ -62,7 +62,7 @@
 	@include sprite($featlist);
 }
 
-.ideas::before{
+.servis--ideas::before{
 	content: "";
 	position: absolute;
     top: 20px;

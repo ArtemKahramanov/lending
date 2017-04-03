@@ -1,0 +1,46 @@
+.portfolio{
+	width: 100%;
+
+	&__title{
+		font: 29px "Ubuntu-M", Arial;
+		margin: 50px 0 70px 0;
+		text-align: center;
+	}
+
+	&__slides{
+		height: 620px;
+		width: 100%;
+		overflow: hidden;
+
+		.portfolio__left{
+			width: 590px;
+			display: inline-block;
+
+			img{
+				float: left;
+			}
+		}
+
+		.portfolio__center{
+			width: 739px;
+			display: inline-block;
+
+			img{
+				float: left;
+			}
+		}
+
+		.portfolio__right{
+			width: 595px;
+			display: inline-block;
+
+			img{
+				float: left;
+			}
+
+			.portfolio__right-image{
+				float: right;
+			}
+		}
+	}
+}
