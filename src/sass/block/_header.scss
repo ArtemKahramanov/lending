@@ -6,6 +6,18 @@ $yellow: #ffd801;
 	background-size: cover;
 	position: relative;
 
+	&__mouse{
+		@include sprite($mouse);
+		position: absolute;
+		bottom: 0;
+		color: transparent;
+		left: 50%;
+
+		&:hover{
+			@include sprite($mouse2);			
+		}
+	}
+
 	.col-sm-6{
 		padding: 0;
 	}

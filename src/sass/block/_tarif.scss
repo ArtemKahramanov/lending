@@ -1,0 +1,169 @@
+.tarifs{
+	margin: 65px 0;
+
+	&__title{
+		font: 29px "Ubuntu-M", Arial;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+
+	&__content{
+		display: flex;
+		justify-content: center;
+		width: 700px;
+		margin: auto;
+		align-items: flex-start;
+		text-align: center;
+
+		button{
+			margin: 54px 0 10px 0;
+		}
+	}
+
+	&__name{
+		font: 19px "Ubuntu-M", Arial;
+		display: block;	
+		margin-bottom: 30px;	
+	}
+
+	&__price{
+		font: 40px "Ubuntu-M", Arial;	
+		display: block;	
+	}
+
+	&__ruble{
+		font: 12px "Ubuntu-L", Arial;	
+		display: block;	
+		color: #545151;
+	}
+	&__star{	
+		display: block;	
+		color: $yellow;
+		margin: 10px 0;
+	}
+
+	&__main{	
+		font: 12px "Ubuntu-M", Arial;	
+	}
+
+	&__parametrs{	
+		font: 12px "Ubuntu-L", Arial;
+		display: block;	
+		color: #545151;
+		border-bottom: 1px dotted #e6e6e6;
+		padding: 8px 0;
+	}
+
+	&__last-parametrs{	
+		font: 12px "Ubuntu-L", Arial;
+		display: block;	
+		color: #545151;
+		padding: 8px 0;
+	}
+
+	&__left{
+		border: 5px solid $yellow;
+		padding: 10px;
+		width: 200px;
+		border-radius: 5px;
+ 		box-shadow: 7px 7px 2px 1px rgba(217, 217, 217, 0.35);
+
+
+		.tarifs__desc{
+			padding-top: 55px;
+			position: relative;
+
+			&::before{
+				content: "";
+				position: absolute;
+				@include sprite($tafit-first);
+				top: 0;
+				left: 40%;
+			}
+		}
+	}
+
+	&__center{
+		border: 2px solid #666;
+		margin: 0 100px;
+		padding: 10px;
+		width: 200px;
+		border-radius: 5px;
+		box-shadow: 7px 7px 2px 1px rgba(217, 217, 217, 0.35);
+
+		.tarifs__desc{
+			padding-top: 55px;
+			position: relative;
+
+			&::before{
+				content: "";
+				position: absolute;
+				@include sprite($tarif-second);
+				top: 0;
+				left: 10px;
+			}
+		}
+	}
+
+	&__right{
+		border: 2px solid #666;
+		padding: 10px;
+		width: 200px;
+		border-radius: 5px;
+		box-shadow: 7px 7px 2px 1px rgba(217, 217, 217, 0.35);
+		position: relative;
+		padding-top: 65px;
+
+		.tarifs__vip {
+			width: 155px;
+			height: 30px;
+			color: white;
+			font: 19px "Ubuntu-M", Arial;
+		    padding: 4px 0;
+		    position: absolute;
+ 		    top: 10px;
+   		    left: -10px;
+		    text-align: center;
+		    border-top-left-radius: 3px;
+		    background: #f24343;
+		}
+
+		.tarifs__vip:before {
+		    height: 0;
+  			width: 0;
+  			bottom: -10px;
+  			left: 0;
+  			border-top: 10px solid #ac3636;
+  			border-left: 10px solid transparent;
+		}
+
+		.tarifs__vip:before, .tarifs__vip:after {
+		  content: "";
+		  position: absolute;
+		}
+
+		.tarifs__vip:after {
+   			height: 0;
+   			width: 0;
+   			bottom: 7px;
+   			right: -23px;
+   			border-left: 15px solid #f24343;
+   			border-right: 15px solid #f24343;
+   			border-bottom: 16px solid transparent;
+   			transform: rotate(-90deg);
+		}
+
+		.tarifs__desc{
+			padding-top: 55px;
+			position: relative;
+
+			&::before{
+				content: "";
+				position: absolute;
+				@include sprite($tarif-vip);
+				top: 0;
+				left: 32px;
+			}
+		}
+	}
+}

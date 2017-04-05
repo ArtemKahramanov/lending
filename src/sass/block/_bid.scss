@@ -1,0 +1,75 @@
+.bid{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.96);
+	z-index: 1;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	padding-top: 500px;
+
+	&__left-content{
+		width:250px; 
+		height: 320px;
+	}
+
+	&__right-content{
+		display: flex;
+		height: 320px;
+		position: relative;
+		align-items: flex-end;
+
+		.bid__list{
+			font: 14px "Ubuntu-L", Arial;
+			color: white;
+			list-style-type: none;
+			margin-left: 160px;
+			margin-bottom: 0;
+			padding: 0;
+			position: relative;
+
+			li{
+				margin-bottom: 55px;
+				position: relative;
+			}
+
+			.bid__mediator::before{
+				content: "";
+				left: -60px;
+				top: -15px;
+				position: absolute;
+				@include sprite($group_);
+			}
+
+			.bid__days::before{
+				content: "";
+				left: -60px;
+				top: -15px;
+				position: absolute;
+				@include sprite($days);
+			}
+
+			.bid__guarantee::before{
+				content: "";
+				left: -60px;
+				top: -15px;
+				position: absolute;
+				@include sprite($garantia);
+			}	
+		}
+	}
+
+	&__title{
+		text-transform: uppercase;
+		font: 16px "Ubuntu-L", Arial;
+		color: white;
+		line-height: 1.5;
+		margin:0 0 25px 0;
+
+		strong{
+			font-family: "Ubuntu-B";
+			display: block;
+		}
+	}
+}

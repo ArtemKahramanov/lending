@@ -1,5 +1,6 @@
 .portfolio{
 	width: 100%;
+	overflow: hidden;
 
 	&__title{
 		font: 29px "Ubuntu-M", Arial;
@@ -9,13 +10,11 @@
 
 	&__slides{
 		height: 620px;
-		width: 100%;
-		overflow: hidden;
+		width: 1924px;
 
 		.portfolio__left{
 			width: 590px;
 			display: inline-block;
-
 			img{
 				float: left;
 			}
@@ -23,8 +22,8 @@
 
 		.portfolio__center{
 			width: 739px;
+			margin: 0 -4px 0 -4px;
 			display: inline-block;
-
 			img{
 				float: left;
 			}
@@ -33,7 +32,6 @@
 		.portfolio__right{
 			width: 595px;
 			display: inline-block;
-
 			img{
 				float: left;
 			}
@@ -41,6 +39,17 @@
 			.portfolio__right-image{
 				float: right;
 			}
+		}
+	}
+
+	&__cricle{
+		font-size: 16px;
+		color: $yellow;
+		margin: 40px 0;
+		text-align: center;
+
+		i{
+			margin-right: 15px;
 		}
 	}
 }
