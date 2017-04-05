@@ -19,6 +19,7 @@
 
 	&__banner{
 		display: flex;
+		margin-bottom: 26px;
 	}
 
 	&__item{
@@ -36,8 +37,9 @@
 	}
 
 	&__desc{
-		font: 9px "Ubuntu-L", Arial;
+		font: 11px "Ubuntu-L", Arial;
 		color: #878787;
+		padding: 0 5px;
 	}
 }
 .servis--design::before{

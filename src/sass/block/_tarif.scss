@@ -2,9 +2,10 @@
 	margin: 65px 0;
 
 	&__title{
-		font: 29px "Ubuntu-M", Arial;
-		text-align: center;
-		margin-bottom: 70px;
+		font: 25px "Ubuntu-M", Arial;
+   		text-align: center;
+   	 	margin-bottom: 68px;
+
 	}
 
 	&__content{
@@ -64,7 +65,7 @@
 	&__left{
 		border: 5px solid $yellow;
 		padding: 10px;
-		width: 200px;
+		width: 250px;
 		border-radius: 5px;
  		box-shadow: 7px 7px 2px 1px rgba(217, 217, 217, 0.35);
 
@@ -85,9 +86,9 @@
 
 	&__center{
 		border: 2px solid #666;
-		margin: 0 100px;
+		margin: 0 55px;
 		padding: 10px;
-		width: 200px;
+		width: 250px;
 		border-radius: 5px;
 		box-shadow: 7px 7px 2px 1px rgba(217, 217, 217, 0.35);
 
@@ -108,14 +109,22 @@
 	&__right{
 		border: 2px solid #666;
 		padding: 10px;
-		width: 200px;
+		width: 250px;
 		border-radius: 5px;
 		box-shadow: 7px 7px 2px 1px rgba(217, 217, 217, 0.35);
 		position: relative;
 		padding-top: 65px;
 
+		&::before{
+			content: "";
+			position: absolute;
+			@include sprite($crown);
+			top: -25px;
+    		right: -22px;
+		}
+
 		.tarifs__vip {
-			width: 155px;
+			width: 180px;
 			height: 30px;
 			color: white;
 			font: 19px "Ubuntu-M", Arial;
@@ -145,11 +154,11 @@
 		.tarifs__vip:after {
    			height: 0;
    			width: 0;
-   			bottom: 7px;
-   			right: -23px;
+   			bottom: 9px;
+   			right: -21px;
    			border-left: 15px solid #f24343;
    			border-right: 15px solid #f24343;
-   			border-bottom: 16px solid transparent;
+   			border-bottom: 12px solid transparent;
    			transform: rotate(-90deg);
 		}
 

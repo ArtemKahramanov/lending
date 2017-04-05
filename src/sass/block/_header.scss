@@ -11,7 +11,8 @@ $yellow: #ffd801;
 		position: absolute;
 		bottom: 0;
 		color: transparent;
-		left: 50%;
+		left: 48.7%;
+		bottom: -5px;
 
 		&:hover{
 			@include sprite($mouse2);			

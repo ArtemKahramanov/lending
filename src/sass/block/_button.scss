@@ -11,6 +11,7 @@
 	cursor: pointer;
 }
 .button--order{
+	font: 12px "Ubuntu-M", Arial;
 	border-radius: 25px;
 	padding: 10px 15px;
 	display: block;
@@ -30,4 +31,11 @@
 	margin: 0;
 	height: 52px;
 	font-size: 16px;
+}
+.button--more{
+	font: 12px "Ubuntu-M", Arial;
+	border-radius: 25px;
+	padding: 10px 25px;
+	display: block;
+	margin: auto;	
 }
