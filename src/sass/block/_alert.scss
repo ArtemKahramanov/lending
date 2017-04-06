@@ -1,13 +1,19 @@
 .alert{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background:rgba(0,0,0,0.96);
-	z-index: 1;
-	display: none;
-	justify-content: center;
-	align-items: center;
-	padding-top: 500px;
+    position: fixed;
+    overflow-y: scroll;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.96);
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    overflow: auto;
+    padding-bottom: 250px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 
 	&__content{
 		color: white;

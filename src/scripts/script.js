@@ -21,12 +21,6 @@ $('.button__close').on('click', function(){
 });
 
 
-// $('.portfolio__slides > div').slick({
-//   	variableWidth: true
-// });
-
-
-
 $('.portfolio__slides').slick({
   	centerMode: true,
   	slidesToScroll: 3,
