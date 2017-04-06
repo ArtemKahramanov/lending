@@ -21,12 +21,13 @@
 			</div>
 		</div>
 		<div class="bid">
+		<div class="bid__content">
 			<div class="bid__left-content">
 				<h3 class="bid__title"><strong>Зкажите Lendingpage</strong> прямо сейчас</h3>
 				<form class="bid__form">
-					<input class="input bid--input" type="text" placeholder="Ваше Имя" name="">
-					<input class="input bid--input" type="text" placeholder="Ваш Телефон" name="">
-					<input class="input bid--input" type="text" placeholder="Ваш E-mail" name="">
+					<input class="input bid--input"  required type="text" placeholder="Ваше Имя" name="">
+					<input class="input bid--input"  required type="text" placeholder="Ваш Телефон" name="">
+					<input class="input bid--input"  required type="text" placeholder="Ваш E-mail" name="">
 					<button class="button button--bid">Отправить</button>
 					<span class="form__desc">Ваши данные в безопасности*</span>
 				</form>
@@ -39,6 +40,7 @@
 					<li class="bid__guarantee">С гарантией 12 месяцев</li>
 				</ul>
 			</div>
+		</div>
 		</div>
 		<header class="header">
 			<div class="active-menu">
@@ -89,8 +91,8 @@
 						продукт достоинство от web студии</h1>
 						<p class="header__text">Работаем индивидуально с каждым клиентом</p>
 						<form class="head-content__form">
-							<input class="input" type="text" placeholder="Имя" name="">
-							<input class="input" type="text" placeholder="Телефон" name="">
+							<input class="input" type="text" required  placeholder="Имя" name="">
+							<input class="input" type="text" required  placeholder="Телефон" name="">
 							<button class="button button--request">Отправить</button>
 							<span class="form__desc">Перезвоним вам в любое удобное время</span>
 						</form>
@@ -298,8 +300,8 @@
 					<span class="individ__title">Создаем сайты</span>
 					<span class="individ__subtitle">Индивидуально для вас</span>
 					<form class="head-content__form">
-						<input class="input" type="text" placeholder="Имя" name="">
-						<input class="input" type="text" placeholder="Телефон" name="">
+						<input class="input" type="text" required  placeholder="Имя" name="">
+						<input class="input" type="text" required  placeholder="Телефон" name="">
 						<button class="button button--request">Отправить</button>
 						<span class="form__desc">Перезвоним вам в любое удобное время</span>
 					</form>
@@ -369,6 +371,8 @@
 	</footer>
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="scripts/script.js"></script>
+	<script src="scripts/slick.min.js"></script>
 </body>
 </html>

@@ -5,9 +5,14 @@
 	background:rgba(0,0,0,0.96);
 	z-index: 1;
 	display: none;
-	justify-content: center;
-	align-items: center;
-	padding-top: 500px;
+
+	&__content{
+		width: 100%;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
 	&__left-content{
 		width:250px; 
