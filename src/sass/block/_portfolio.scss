@@ -1,6 +1,7 @@
 .portfolio{
 	width: 100%;
-	overflow: hidden;
+	overflow-y: visible;
+	overflow-x: hidden;
 
 	&__title{
 		font: 29px "Ubuntu-M", Arial;
@@ -42,14 +43,8 @@
 		}
 	}
 
-	&__cricle{
-		font-size: 18px;
-		color: $yellow;
-		margin: 32px 0 38px 0;
-		text-align: center;
-
-		i{
-			margin-right: 15px;
-		}
+	&__desc{
+		margin-top: 100px;
 	}
+
 }

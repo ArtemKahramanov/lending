@@ -22,13 +22,14 @@ $('.button__close').on('click', function(){
 
  
 $('.portfolio__slides').slick({ 
-centerMode: true, 
-slidesToScroll: 3, 
-initialSlide: 1, 
-аccessibility: false, 
-centerPadding: false, 
-autoplay: true, 
-variableWidth: true 
+	centerMode: true, 
+	slidesToScroll: 3, 
+	initialSlide: 1, 
+	аccessibility: false, 
+	centerPadding: false, 
+	autoplay: true, 
+	dots: true,
+	variableWidth: true 
 });
  
 $(function(){
