@@ -20,19 +20,38 @@ $('.button__close').on('click', function(){
 	$('.bid').fadeOut(350);
 });
 
-
-$('.portfolio__slides').slick({
-  	centerMode: true,
-  	slidesToScroll: 3,
-	initialSlide: 1,
-	аccessibility: false,
-	centerPadding: false
+ 
+$('.portfolio__slides').slick({ 
+centerMode: true, 
+slidesToScroll: 3, 
+initialSlide: 1, 
+аccessibility: false, 
+centerPadding: false, 
+autoplay: true, 
+variableWidth: true 
 });
-
-
-
-
-
-
+ 
+$(function(){
+$('a[href^="#tarif"]').click(function(){
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 400);
+return false; 
+});
+$('a[href^="#we"]').click(function(){
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 400);
+return false; 
+});
+$('a[href^="#portfolio"]').click(function(){
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 400);
+return false; 
+});
+$('a[href^="#contact"]').click(function(){
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 400);
+return false; 
+}); 
+}); 
 
 });
