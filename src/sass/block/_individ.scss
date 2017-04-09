@@ -4,23 +4,25 @@
 	display: flex;
     align-items: center;
     justify-content: center;
-}
-.individ__content{
-	margin-right: 30px;
+    padding-left: 150px;
 
-	form{
-		margin-top: 20px;
+	&__content{
+		margin-right: 15px;
+	
+		form{
+			margin-top: 20px;
+		}
 	}
-}
-.individ__title{
-	color: white;
-	display: block;
-	font:35px "Ubuntu-M", Arial; 
-	max-width: 300px;
-}
-.individ__subtitle{
-	color: white;
-	display: block;
-	font:35px "Ubuntu-B", Arial; 
-	max-width: 300px;
+	&__title{
+		color: white;
+		display: block;
+		font:35px "Ubuntu-M", Arial; 
+		max-width: 300px;
+	}
+	&__subtitle{
+		color: white;
+		display: block;
+		font:35px "Ubuntu-B", Arial; 
+		max-width: 300px;
+	}
 }

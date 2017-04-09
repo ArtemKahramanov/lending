@@ -69,9 +69,14 @@
 						продукт достоинство от web студии</h1>
 						<p class="header__text">Работаем индивидуально с каждым клиентом</p>
 						<form class="head-content__form">
-							<input class="input" type="text" required  placeholder="Имя" name="">
-							<input class="input" type="text" required  placeholder="Телефон" name="">
-							<button class="button button--request">Отправить</button>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Site Name">
+							<input type="hidden" name="admin_email" value="artem.kakhramanov.99@mail.com">
+							<input type="hidden" name="form_subject" value="Request">
+							<!-- END Hidden Required Fields -->
+							<input class="input" name="name" data-name="Имя: " type="text" required placeholder="Имя" name="">
+							<input class="input" name="phone" data-name="Телефон: " type="text" required placeholder="Телефон" name="">
+							<button type="submit" class="button button--request">Отправить</button>
 							<span class="form__desc">Перезвоним вам в любое удобное время</span>
 						</form>
 						<ul class="header__list">
@@ -85,68 +90,70 @@
 			<div class="header__mouse">mouse</div>
 		</header>
 		<main>
-		<div class="col-md-12 content" id="we">
-			<div class="servis">
-				<h2 class="servis__title">Наши преимущества</h2>
-				<div class="servis__banner">
-					<div class="servis__item servis--design">
-						<h4 class="servis__name">Responsive design</h4>
-						<p class="servis__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt </p>
+		<div class="container">
+			<div class="col-md-12" id="we">
+				<div class="servis">
+					<h2 class="servis__title">Наши преимущества</h2>
+					<div class="servis__banner">
+						<div class="servis__item servis--design">
+							<h4 class="servis__name">Responsive design</h4>
+							<p class="servis__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt </p>
+						</div>
+						<div class="servis__item servis--secutity">
+							<h4 class="servis__name">Endless Security</h4>
+							<p class="servis__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt </p>
+						</div>
+						<div class="servis__item servis--featlist">
+							<h4 class="servis__name">Incredible features</h4>
+							<p class="servis__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt </p>
+						</div>
+						<div class="servis__item servis--ideas">
+							<h4 class="servis__name">Fresh ideas</h4>
+							<p class="servis__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt </p>
+						</div>
 					</div>
-					<div class="servis__item servis--secutity">
-						<h4 class="servis__name">Endless Security</h4>
-						<p class="servis__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt </p>
-					</div>
-					<div class="servis__item servis--featlist">
-						<h4 class="servis__name">Incredible features</h4>
-						<p class="servis__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt </p>
-					</div>
-					<div class="servis__item servis--ideas">
-						<h4 class="servis__name">Fresh ideas</h4>
-						<p class="servis__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt </p>
-					</div>
+					<button class="button button--order">Заказать звонок</button>
 				</div>
-				<button class="button button--order">Заказать звонок</button>
-			</div>
-			<div class="profit">
-				<h2 class="profit__title">Наши возможности</h2>
-				<div class="features__block">
-					<div class="features__images">
-						<img class="img-responsive" src="img/girl.jpg" alt="" width="346" height="242">
+				<div class="profit">
+					<h2 class="profit__title">Наши возможности</h2>
+					<div class="features__block">
+						<div class="features__images">
+							<img class="img-responsive" src="img/girl.jpg" alt="" width="346" height="242">
+						</div>
+						<div class="features__desc">
+							<h4 class="features__caption">Incredible features</h4>
+							<p class="features__inform">Мы беремся за разработку сайтов и информационных
+								систем, которые можем сделать , и не участвуем в
+								«мегасрочных» проектах. Мы не прячемся от заказчика
+								за объемным техническим заданием.  Наше ТЗ —
+								это схемы (wireframes) основных разделов сайта
+							и пара страниц со списком основных функций и сценариев.</p>
+						</div>
 					</div>
-					<div class="features__desc">
-						<h4 class="features__caption">Incredible features</h4>
-						<p class="features__inform">Мы беремся за разработку сайтов и информационных
-							систем, которые можем сделать , и не участвуем в
-							«мегасрочных» проектах. Мы не прячемся от заказчика
-							за объемным техническим заданием.  Наше ТЗ —
-							это схемы (wireframes) основных разделов сайта
-						и пара страниц со списком основных функций и сценариев.</p>
-					</div>
-				</div>
-				<div class="benefits">
-					<div class="benefits__youget">
-						<h3 class="benefits__title">Заказав у нас вы получаете</h3>
-						<ul class="benefits__list">
-							<li>Работа индивидуально с каждым заказчиком, Вы уникальны !</li>
-							<li>Анализ рынка конкурентов, вникание в задачу</li>
-							<li>Выявление сильных и слабых сторон сайтов</li>
-							<li>Взаимодействие и поддержка</li>
-							<li>Участие в дальнейшем развитии компании</li>
-						</ul>
-					</div>
-					<div class="benefits__support">
-						<img src="img/mobile.jpg" class="img-responsive" alt="" width="119" height="167">
-						<h3 class="benefits__title">Постоянная Online-поддержка</h3>
-						<p class="benefits__desc">Мы создаем условия для
-							быстрого и оперативного реагирования
-							для клиентов, сотрудники которой могут
-							оказать полную поддержку
-						решив вопрос в кратчайшие сроки</p>
+					<div class="benefits">
+						<div class="benefits__youget">
+							<h3 class="benefits__title">Заказав у нас вы получаете</h3>
+							<ul class="benefits__list">
+								<li>Работа индивидуально с каждым заказчиком, Вы уникальны !</li>
+								<li>Анализ рынка конкурентов, вникание в задачу</li>
+								<li>Выявление сильных и слабых сторон сайтов</li>
+								<li>Взаимодействие и поддержка</li>
+								<li>Участие в дальнейшем развитии компании</li>
+							</ul>
+						</div>
+						<div class="benefits__support">
+							<img src="img/mobile.jpg" class="img-responsive" alt="" width="119" height="167">
+							<h3 class="benefits__title">Постоянная Online-поддержка</h3>
+							<p class="benefits__desc">Мы создаем условия для
+								быстрого и оперативного реагирования
+								для клиентов, сотрудники которой могут
+								оказать полную поддержку
+							решив вопрос в кратчайшие сроки</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -186,104 +193,111 @@
 			</div>
 		</section>
 		<section class="tarifs">
-			<h3 class="tarifs__title">Наши тарифы</h3>
-			<div class="bid">
-				<div class="bid__content">
-					<div class="bid__left-content">
-						<h3 class="bid__title"><strong>Зкажите Lendingpage</strong> прямо сейчас</h3>
-						<form class="bid__form">
-							<input class="input bid--input"  required type="text" placeholder="Ваше Имя" name="">
-							<input class="input bid--input"  required type="text" placeholder="Ваш Телефон" name="">
-							<input class="input bid--input"  required type="text" placeholder="Ваш E-mail" name="">
-							<button class="button button--bid">Отправить</button>
-							<span class="form__desc">Ваши данные в безопасности*</span>
-						</form>
-					</div>
-					<div class="bid__right-content">
-						<button class="button__close"><i class="fa fa-times" aria-hidden="true"></i></button>
-						<ul class="bid__list">
-							<li class="bid__mediator">Без посредников</li>
-							<li class="bid__days">От 5 дней</li>
-							<li class="bid__guarantee">С гарантией 12 месяцев</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="tarifs__content" id="tarif">
-				<div class="tarifs__left">
-					<span class="tarifs__name">Тариф старт</span>
-					<span class="tarifs__price">14 500</span>
-					<span class="tarifs__ruble">рублей</span>
-					<div class="tarifs__star">
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star-o" aria-hidden="true"></i>
-						<i class="fa fa-star-o" aria-hidden="true"></i>
-					</div>
-					<div class="tarifs__desc">
-						<p class="tarifs__main">Поддержка WhatsApp, Skype</p>
-						<span class="tarifs__parametrs">Разработка для сайта или lending page</span>
-						<span class="tarifs__parametrs">Макет PSD</span>
-						<span class="tarifs__parametrs">Нарезка макета для врстки</span>
-						<span class="tarifs__parametrs">Уникальный, нешаблонный дизайн</span>
-						<span class="tarifs__parametrs">Разработка прототипа (если требуется)</span>
-						<span class="tarifs__parametrs">Корректировка текста</span>
-						<span class="tarifs__parametrs">Анализ дизайна сайтов-конкурентов</span>
-						<span class="tarifs__last-parametrs">Разработка дизайн-макета возможна как существующего сайта, так и нового многостраничного сайта или lending page</span>
-						<button class="button button--get">Заказать</button>
+			<div class="container">
+				<h3 class="tarifs__title">Наши тарифы</h3>
+				<div class="bid">
+					<div class="bid__content">
+						<div class="bid__left-content">
+							<h3 class="bid__title"><strong>Закажите Landingpage</strong> прямо сейчас</h3>
+							<form class="bid__form">
+								<!-- Hidden Required Fields -->
+								<input type="hidden" name="project_name" value="Site Name">
+								<input type="hidden" name="admin_email" value="artem.kakhramanov.99@mail.com">
+								<input type="hidden" name="form_subject" value="Request">
+								<!-- END Hidden Required Fields -->
+								<input class="input bid--input"  required type="text" placeholder="Ваше Имя" name="">
+								<input class="input bid--input"  required type="text" placeholder="Ваш Телефон" name="">
+								<input class="input bid--input"  required type="text" placeholder="Ваш E-mail" name="">
+								<button class="button button--bid">Отправить</button>
+								<span class="form__desc">Ваши контактыные данные в безопасности*</span>
+							</form>
+						</div>
+						<div class="bid__right-content">
+							<button class="button__close"><i class="fa fa-times" aria-hidden="true"></i></button>
+							<ul class="bid__list">
+								<li class="bid__mediator">Без посредников</li>
+								<li class="bid__days">От 5 дней</li>
+								<li class="bid__guarantee">С гарантией 12 месяцев</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="tarifs__center">
-					<span class="tarifs__name">Тариф свои</span>
-					<span class="tarifs__price">25 999</span>
-					<span class="tarifs__ruble">рублей</span>
-					<div class="tarifs__star">
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star-o" aria-hidden="true"></i>
+				<div class="tarifs__content" id="tarif">
+					<div class="tarifs__left">
+						<span class="tarifs__name">Тариф старт</span>
+						<span class="tarifs__price">14 500</span>
+						<span class="tarifs__ruble">рублей</span>
+						<div class="tarifs__star">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+						<div class="tarifs__desc">
+							<p class="tarifs__main">Поддержка WhatsApp, Skype</p>
+							<span class="tarifs__parametrs">Разработка для сайта или landing page</span>
+							<span class="tarifs__parametrs">Макет PSD</span>
+							<span class="tarifs__parametrs">Нарезка макета для врстки</span>
+							<span class="tarifs__parametrs">Уникальный, нешаблонный дизайн</span>
+							<span class="tarifs__parametrs">Разработка прототипа (если требуется)</span>
+							<span class="tarifs__parametrs">Корректировка текста</span>
+							<span class="tarifs__parametrs">Анализ дизайна сайтов-конкурентов</span>
+							<span class="tarifs__last-parametrs">Разработка дизайн-макета возможна как существующего сайта, так и нового многостраничного сайта или lending page</span>
+							<button class="button button--get">Заказать</button>
+						</div>
 					</div>
-					<div class="tarifs__desc">
-						<p class="tarifs__main">Базовый пакет услуг, консультации, личный менеджер, программист</p>
-						<span class="tarifs__parametrs">Разработка нешаблоннго лендинг пейдж под ключ</span>
-						<span class="tarifs__parametrs">Внутренняя SEO - оптимизация</span>
-						<span class="tarifs__parametrs">Слайдер, алерея и т.д.</span>
-						<span class="tarifs__parametrs">Кроссбраузерность</span>
-						<span class="tarifs__parametrs">Запуск проекта 5-14 дней</span>
-						<span class="tarifs__parametrs">Подключение аналитики</span>
-						<span class="tarifs__parametrs">Прототип сайта</span>
-						<span class="tarifs__parametrs">Paralax эффекты и анимация</span>
-						<span class="tarifs__last-parametrs">Органиченное количество коректировок</span>
-						<button class="button button--get">Заказать</button>
+					<div class="tarifs__center">
+						<span class="tarifs__name">Тариф свои</span>
+						<span class="tarifs__price">25 999</span>
+						<span class="tarifs__ruble">рублей</span>
+						<div class="tarifs__star">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
+						<div class="tarifs__desc">
+							<p class="tarifs__main">Базовый пакет услуг, консультации, личный менеджер, программист</p>
+							<span class="tarifs__parametrs">Разработка нешаблоннго лендинг пейдж под ключ</span>
+							<span class="tarifs__parametrs">Внутренняя SEO - оптимизация</span>
+							<span class="tarifs__parametrs">Слайдер, алерея и т.д.</span>
+							<span class="tarifs__parametrs">Кроссбраузерность</span>
+							<span class="tarifs__parametrs">Запуск проекта 5-14 дней</span>
+							<span class="tarifs__parametrs">Подключение аналитики</span>
+							<span class="tarifs__parametrs">Прототип сайта</span>
+							<span class="tarifs__parametrs">Paralax эффекты и анимация</span>
+							<span class="tarifs__last-parametrs">Органиченное количество коректировок</span>
+							<button class="button button--get">Заказать</button>
+						</div>
 					</div>
-				</div>
-				<div class="tarifs__right">
-					<span class="tarifs__vip">Тариф VIP</span>
-					<span class="tarifs__price">30 999</span>
-					<span class="tarifs__ruble">рублей</span>
-					<div class="tarifs__star">
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-					</div>
-					<div class="tarifs__desc">
-						<p class="tarifs__main">Базовый пакет услуг, консультации, личный менеджер, программист, SEO компания, маркетолог</p>
-						<span class="tarifs__parametrs">Все перечисленное</span>
-						<span class="tarifs__parametrs">Внутренняя SEO-оптимизация</span>
-						<span class="tarifs__parametrs">Слайдер, алерея и т.д.</span>
-						<span class="tarifs__parametrs">Кроссбраузерность</span>
-						<span class="tarifs__parametrs">Запуск проекта 7-14 дней</span>
-						<span class="tarifs__parametrs">Подключение аналитики</span>
-						<span class="tarifs__parametrs">Paralax эффекты и анимация</span>
-						<span class="tarifs__parametrs">Ограниченое количество корректировок</span>
-						<span class="tarifs__parametrs">Уникальные иконки, кнопки и тд</span>
-						<span class="tarifs__parametrs">Домен на год и хостинг на 3 месяца в подарок</span>
-						<span class="tarifs__last-parametrs">Настройка "Директа" со скидкой 15%</span>
-						<button class="button button--get">Заказать</button>
+					<div class="tarifs__right">
+						<span class="tarifs__vip">Тариф VIP</span>
+						<span class="tarifs__price">30 999</span>
+						<span class="tarifs__ruble">рублей</span>
+						<div class="tarifs__star">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</div>
+						<div class="tarifs__desc">
+							<p class="tarifs__main">Базовый пакет услуг, консультации, личный менеджер, программист, SEO компания, маркетолог</p>
+							<span class="tarifs__parametrs">Все перечисленное</span>
+							<span class="tarifs__parametrs">Внутренняя SEO-оптимизация</span>
+							<span class="tarifs__parametrs">Слайдер, алерея и т.д.</span>
+							<span class="tarifs__parametrs">Кроссбраузерность</span>
+							<span class="tarifs__parametrs">Запуск проекта 7-14 дней</span>
+							<span class="tarifs__parametrs">Подключение аналитики</span>
+							<span class="tarifs__parametrs">Paralax эффекты и анимация</span>
+							<span class="tarifs__parametrs">Ограниченое количество корректировок</span>
+							<span class="tarifs__parametrs">Уникальные иконки, кнопки и тд</span>
+							<span class="tarifs__parametrs">Домен на год и хостинг на 3 месяца в подарок</span>
+							<span class="tarifs__last-parametrs">Настройка "Директа" со скидкой 15%</span>
+							<button class="button button--get">Заказать</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -294,9 +308,14 @@
 					<span class="individ__title">Создаем сайты</span>
 					<span class="individ__subtitle">Индивидуально для вас</span>
 					<form class="head-content__form">
-						<input class="input" type="text" required  placeholder="Имя" name="">
-						<input class="input" type="text" required  placeholder="Телефон" name="">
-						<button class="button button--request">Отправить</button>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Site Name">
+						<input type="hidden" name="admin_email" value="artem.kakhramanov.99@mail.com">
+						<input type="hidden" name="form_subject" value="Request">
+						<!-- END Hidden Required Fields -->
+						<input class="input" name="name" data-name="Имя: " type="text" required placeholder="Имя" name="">
+						<input class="input" name="phone" data-name="Телефон: " type="text" required placeholder="Телефон" name="">
+						<button type="submit" class="button button--request">Отправить</button>
 						<span class="form__desc">Перезвоним вам в любое удобное время</span>
 					</form>
 				</div>
@@ -335,33 +354,34 @@
 			</div>
 		</section>
 		<footer class="footer1">
-			<div class="footer">
-				<div class="footer__logo">
-					<div class="logotype logotype--footer">
-						<span class="logotype__span">PR</span>OFI
-					</div>
-					<div class="footer__logo-desc">
-						<div>Изготовление сайтов</div>
-						<div>и интернет-магазинов</div>
-					</div>
-				</div>
-				<div class="footer__contact">
-					<div class="footer__phone">+ 8 800 951-65-21</div>
-					<div class="menu__social footer--social">
-						<div>
-							<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+			<div class="container">
+				<div class="footer">
+					<div class="footer__logo">
+						<div class="logotype logotype--footer">
+							<span class="logotype__span">PR</span>OFI
 						</div>
-						
+						<div class="footer__logo-desc">
+							<div>Изготовление сайтов</div>
+							<div>и интернет-магазинов</div>
+						</div>
 					</div>
-				</div>
-				<div class="footer__copyright">
-					2017  Разработка сайта - Home stydio
+					<div class="footer__contact">
+						<div class="footer__phone">+ 8 800 951-65-21</div>
+						<div class="menu__social footer--social">
+							<div>
+								<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="footer__copyright">
+						2017  Разработка сайта - Home stydio
+					</div>
 				</div>
 			</div>
 		</div>
-		
 	</footer>
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>

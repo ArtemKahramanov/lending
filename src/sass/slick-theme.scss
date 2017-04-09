@@ -135,7 +135,6 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-dots {
-    transform: scale(0.8);
     position: absolute;
     bottom: -55px;
     list-style: none;
@@ -145,6 +144,7 @@ $slick-opacity-not-active: 0.25 !default;
     margin: 0;
     width: 100%;
     li {
+        transform: scale(0.8);
         position: relative;
         display: inline-block;
         height: 20px;

@@ -33,26 +33,65 @@ $('.portfolio__slides').slick({
 });
  
 $(function(){
-$('a[href^="#tarif"]').click(function(){
-var target = $(this).attr('href');
-$('html, body').animate({scrollTop: $(target).offset().top}, 400);
-return false; 
+	$('a[href^="#tarif"]').click(function(){
+	var target = $(this).attr('href');
+	$('html, body').animate({scrollTop: $(target).offset().top}, 400);
+	return false; 
 });
-$('a[href^="#we"]').click(function(){
-var target = $(this).attr('href');
-$('html, body').animate({scrollTop: $(target).offset().top}, 400);
-return false; 
+	$('a[href^="#we"]').click(function(){
+	var target = $(this).attr('href');
+	$('html, body').animate({scrollTop: $(target).offset().top}, 400);
+	return false; 
 });
-$('a[href^="#portfolio"]').click(function(){
-var target = $(this).attr('href');
-$('html, body').animate({scrollTop: $(target).offset().top}, 400);
-return false; 
+	$('a[href^="#portfolio"]').click(function(){
+	var target = $(this).attr('href');
+	$('html, body').animate({scrollTop: $(target).offset().top}, 400);
+	return false; 
 });
-$('a[href^="#contact"]').click(function(){
-var target = $(this).attr('href');
-$('html, body').animate({scrollTop: $(target).offset().top}, 400);
-return false; 
+	$('a[href^="#contact"]').click(function(){
+	var target = $(this).attr('href');
+	$('html, body').animate({scrollTop: $(target).offset().top}, 400);
+	return false; 
+});
 }); 
-}); 
+
+	//E-mail Ajax Send
+	$(".head-content__form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "./mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Спасибо за заказ звонка!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+
+	//E-mail Ajax Send
+	$(".bid__form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "./mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Спасибо за заказ звонка!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+
+
+
 
 });

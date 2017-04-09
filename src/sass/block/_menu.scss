@@ -37,6 +37,10 @@
 		padding:0 8px 0 20px;
 		float: right;
 
+		&:active{
+			color: $yellow;
+		}
+
 		i{
 		display: block;
 		border: 2px solid #ffd801;

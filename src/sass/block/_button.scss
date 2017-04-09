@@ -1,7 +1,7 @@
 .button{
-	margin-left: 20px;
+	margin-left: 15px;
 	background: $yellow;
-	padding: 10px 28px;
+	padding: 8px 25px;
 	border: 0;
 	color: #333;
 	font-size: 11px;
@@ -9,13 +9,20 @@
 	cursor: pointer;
 	font: 12px "Ubuntu-M", Arial;
 	cursor: pointer;
+	border: 3px solid $yellow;
 }
 .button--order{
 	font: 12px "Ubuntu-M", Arial;
-	border-radius: 25px;
-	padding: 10px 15px;
+	border-radius: 45px;
+	padding: 8px 15px;
 	display: block;
+	border: 3px solid $yellow;
 	margin: auto;
+
+	&:active{
+		border: 3px solid $yellow;
+		background:white;
+	}
 }
 .button__close{
 	border: none;
@@ -35,7 +42,19 @@
 .button--more{
 	font: 12px "Ubuntu-M", Arial;
 	border-radius: 25px;
-	padding: 10px 25px;
+	padding: 8px 22px;
 	display: block;
 	margin: auto;	
+
+	&:active{
+		background:white;
+	}
+}
+.button--request{
+	padding: 8px 25px;
+
+	&:active{
+		background: transparent;
+		color: white;
+	}
 }

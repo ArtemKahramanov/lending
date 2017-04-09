@@ -3,7 +3,6 @@
 	width: 100%;
 }
 .footer{
-    @include screen-md(740px);
 	margin: auto;
 	float: none;
 	display: flex;

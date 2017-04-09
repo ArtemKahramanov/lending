@@ -43,6 +43,19 @@ gulp.task('html:watch', function () {
  return  gulp.watch('./src/*.html',['html']);
 });
 
+gulp.task('php', function () {
+ return  gulp.src('./src/*.php')
+    .pipe(gulp.dest('./dist/'))
+    .pipe(browserSync.reload({
+        stream: true
+    }))
+    ;
+});
+
+gulp.task('php:watch', function () {
+ return  gulp.watch('./src/*.php',['php']);
+});
+
 gulp.task('script', function () {
  return  gulp.src('./src/scripts/**/*.js')
   .pipe(gulp.dest('./dist/scripts/'))
@@ -73,4 +86,4 @@ gulp.task('fonts', function(){
     .pipe(gulp.dest('dist/fonts/'));
 });
 
-gulp.task('default',['browser-sync', 'sass:watch', 'html:watch', 'script:watch', 'images', 'fonts']);
+gulp.task('default',['browser-sync', 'sass:watch', 'html:watch', 'script:watch', 'images', 'fonts', 'php']);

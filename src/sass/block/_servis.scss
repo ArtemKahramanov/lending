@@ -53,21 +53,24 @@
 	content: "";
 	position: absolute;
     top: 20px;
-    right: 81px;
+    right: 75px;
 	@include sprite($security);
 }
 .servis--featlist::before{
 	content: "";
 	position: absolute;
     top: 20px;
-    right: 74px;
+    right: 68px;
 	@include sprite($featlist);
 }
-
 .servis--ideas::before{
 	content: "";
 	position: absolute;
     top: 20px;
-    right: 77px;
+    right: 74px;
 	@include sprite($idea);
 }
+
+
+
+
