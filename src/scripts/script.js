@@ -4,11 +4,6 @@ $('.menu__butt').on('click', function(){
 	$('.active-menu').fadeIn(350).css('display', 'flex');
 });
 
-$('.button--request').on('click', function(event){
-	event.preventDefault();
-	$('.alert').fadeIn(350).css('display', 'flex');
-});
-
 $('.button--get').on('click', function(event){
 	event.preventDefault();
 	$('.bid').fadeIn(350).css('display', 'flex');
@@ -66,7 +61,11 @@ $('.slick-dots').appendTo( $('.portfolio__points') );
 			url: "./mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Спасибо за заказ звонка!");
+			// alert("Спасибо за заказ звонка!");
+			$('.button--request').on('click', function(event){
+	event.preventDefault();
+	$('.alert').fadeIn(350).css('display', 'flex');
+});
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
@@ -84,7 +83,7 @@ $('.slick-dots').appendTo( $('.portfolio__points') );
 			url: "./mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Спасибо за заказ звонка!");
+			alert("Спасибо за заказ!");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
