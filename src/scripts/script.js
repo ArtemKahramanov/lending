@@ -9,6 +9,11 @@ $('.button--get').on('click', function(event){
 	$('.bid').fadeIn(350).css('display', 'flex');
 });
 
+$('.button--order').on('click', function(event){
+	event.preventDefault();
+	$('.bid').fadeIn(350).css('display', 'flex');
+});
+
 $('.button__close').on('click', function(){
 	$('.active-menu').fadeOut(350);
 	$('.alert').fadeOut(350);
@@ -63,9 +68,9 @@ $('.slick-dots').appendTo( $('.portfolio__points') );
 		}).done(function() {
 			// alert("Спасибо за заказ звонка!");
 			$('.button--request').on('click', function(event){
-	event.preventDefault();
-	$('.alert').fadeIn(350).css('display', 'flex');
-});
+				event.preventDefault();
+				$('.alert').fadeIn(350).css('display', 'flex');
+			});
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
