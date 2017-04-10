@@ -55,6 +55,9 @@ $(function(){
 });
 }); 
 
+$('.slick-dots').appendTo( $('.portfolio__points') );
+
+
 	//E-mail Ajax Send
 	$(".head-content__form").submit(function() { //Change
 		var th = $(this);
