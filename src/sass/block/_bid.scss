@@ -30,46 +30,46 @@
 		position: relative;
 		align-items: center;
 		padding-top: 75px;
+	}
 
-		.bid__list{
-			font: 14px "Ubuntu-L", Arial;
-			color: white;
-			list-style-type: none;
-			margin-left: 150px;
-			margin-bottom: 0;
-			padding: 0;
+	&__list{
+		font: 14px "Ubuntu-L", Arial;
+		color: white;
+		list-style-type: none;
+		margin-left: 150px;
+		margin-bottom: 0;
+		padding: 0;
+		position: relative;
+
+		li{
+			margin-bottom: 55px;
 			position: relative;
-
-			li{
-				margin-bottom: 55px;
-				position: relative;
-			}
-
-			.bid__mediator::before{
-				content: "";
-				left: -60px;
-				top: -15px;
-				position: absolute;
-				@include sprite($group_);
-			}
-
-			.bid__days::before{
-				content: "";
-				left: -60px;
-				top: -15px;
-				position: absolute;
-				@include sprite($days);
-			}
-
-			.bid__guarantee::before{
-				content: "";
-				left: -60px;
-				top: -15px;
-				position: absolute;
-				@include sprite($garantia);
-			}	
 		}
 	}
+
+	&__mediator::before{
+		content: "";
+		left: -60px;
+		top: -15px;
+		position: absolute;
+		@include sprite($group_);
+	}
+
+	&__days::before{
+		content: "";
+		left: -60px;
+		top: -15px;
+		position: absolute;
+		@include sprite($days);
+	}
+
+	&__guarantee::before{
+		content: "";
+		left: -60px;
+		top: -15px;
+		position: absolute;
+		@include sprite($garantia);
+	}	
 
 	&__title{
 		text-transform: uppercase;

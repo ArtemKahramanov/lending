@@ -125,7 +125,12 @@
 
 		&:hover{
 			padding: 63px 8px 13px 8px;
-			border: 4px solid $yellow;			
+			border: 4px solid $yellow;
+
+			.tarifs__vip {
+				top: 8px;
+  				left: -13px;
+			}			
 		}
 
 		&::before{
@@ -134,45 +139,6 @@
 			@include sprite($crown);
 			top: -25px;
     		right: -22px;
-		}
-
-		.tarifs__vip {
-			width: 180px;
-			height: 30px;
-			color: white;
-			font: 19px "Ubuntu-M", Arial;
-		    padding: 4px 0;
-		    position: absolute;
- 		    top: 10px;
-   		    left: -10px;
-		    text-align: center;
-		    border-top-left-radius: 3px;
-		    background: #f24343;
-		}
-
-		.tarifs__vip:before {
-		    height: 0;
-  			width: 0;
-  			bottom: -10px;
-  			left: 0;
-  			border-top: 10px solid #ac3636;
-  			border-left: 10px solid transparent;
-		}
-
-		.tarifs__vip:before, .tarifs__vip:after {
-		  content: "";
-		  position: absolute;
-		}
-
-		.tarifs__vip:after {
-   			height: 0;
-   			width: 0;
-   			bottom: 9px;
-   			right: -21px;
-   			border-left: 15px solid #f24343;
-   			border-right: 15px solid #f24343;
-   			border-bottom: 12px solid transparent;
-   			transform: rotate(-90deg);
 		}
 
 		.tarifs__desc{
@@ -187,5 +153,44 @@
 				left: 45px;
 			}
 		}
+	}
+
+	&__vip {
+		width: 180px;
+		height: 30px;
+		color: white;
+		font: 19px "Ubuntu-M", Arial;
+	    padding: 4px 0;
+	    position: absolute;
+		top: 10px;
+  		left: -10px;
+	    text-align: center;
+	    border-top-left-radius: 3px;
+	    background: #f24343;
+	}
+
+	&__vip:before {
+	    height: 0;
+		width: 0;
+		bottom: -10px;
+		left: 0;
+		border-top: 10px solid #ac3636;
+		border-left: 10px solid transparent;
+	}
+
+	&__vip:before, &__vip:after {
+	  content: "";
+	  position: absolute;
+	}
+
+	&__vip:after {
+	 	height: 0;
+	 	width: 0;
+	 	bottom: 9px;
+	 	right: -21px;
+	 	border-left: 15px solid #f24343;
+	 	border-right: 15px solid #f24343;
+	 	border-bottom: 12px solid transparent;
+	 	transform: rotate(-90deg);
 	}
 }

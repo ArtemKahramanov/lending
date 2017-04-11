@@ -57,48 +57,47 @@ $(function(){
 
 $('.slick-dots').appendTo( $('.portfolio__points') );
 
+//E-mail Ajax Send
+$(".head-content__form").submit(function() { //Change
+	var th = $(this);
+	$.ajax({
+		type: "POST",
+		url: "./mail.php", //Change
+		data: th.serialize()
+	}).done(function() {
+			$('.alert').fadeIn(350).css('display', 'flex');
+		setTimeout(function() {
+			// Done Functions
+			th.trigger("reset");
+		}, 1000);
+	});
+	return false;
+});
 
 	//E-mail Ajax Send
-	$(".head-content__form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "./mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			// alert("Спасибо за заказ звонка!");
-			$('.button--request').on('click', function(event){
-				event.preventDefault();
-				$('.alert').fadeIn(350).css('display', 'flex');
-			});
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
+$(".bid__form").submit(function() { //Change
+	var th = $(this);
+	$.ajax({
+		type: "POST",
+		url: "./mail.php", //Change
+		data: th.serialize()
+	}).done(function() {
+		alert("Спасибо за заказ!");
+		setTimeout(function() {
+			// Done Functions
+			th.trigger("reset");
+		}, 1000);
 	});
+	return false;
+});
 
-
-	//E-mail Ajax Send
-	$(".bid__form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "./mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Спасибо за заказ!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
-
-
-
+$("a[rel=group]").fancybox({
+        'transitionIn' : 'fade',
+        'transitionOut' : 'fade',
+        'titlePosition' : 'over',
+        'showCloseButton' : 'true',
+        'overlayOpacity' : '0,3'
+});
 
 
 });

@@ -12,6 +12,7 @@
 		display: flex;
 		align-items: center;
 	}
+
 	.logotype--footer{
 		padding-right: 10px;
 		border-right: 1px solid #525252;
@@ -38,14 +39,6 @@
 			display: inline-block;
 		}
 	
-		.footer__phone{
-			margin-right: 10px;
-		}
-	
-		.footer--social > div{
-			padding: 0;
-		}
-	
 		i{
 			padding-right: 5px;
 			color: #8f8b90;
@@ -55,6 +48,15 @@
 			}
 		}
 	}
+
+	&__phone{
+		margin-right: 10px;
+	}
+	
+	&--social > div{
+		padding: 0;
+	}
+
 	&__copyright{
 		display: flex;
 		align-items: center;

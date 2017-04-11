@@ -80,41 +80,40 @@
 			color: $yellow;
 		}
 	}
-
-	.list--lending::before{
-		content: '';
-		position: absolute;
-		@include sprite($lending);
-		left: -100px;
-    	top: -10px;
-	}
-	.list--we::before{
-		content: '';
-		position: absolute;
-		@include sprite($we);
-		left: -100px;
-    	top: -10px;
-	}
-	.list--portfolio::before{
-		content: '';
-		position: absolute;
-		@include sprite($portfolio);
-		left: -100px;
-    	top: -10px;
-	}
-	.list--price::before{
-		content: '';
-		position: absolute;
-		@include sprite($price);
-		left: -100px;
-    	top: -10px;
-	}
-	.list--contact::before{
-		content: '';
-		position: absolute;
-		@include sprite($contacts);
-		left: -100px;
-    	top: -10px;
-	}
 }
 
+.list--lending::before{
+	content: '';
+	position: absolute;
+	@include sprite($lending);
+	left: -100px;
+   	top: -10px;
+}
+.list--we::before{
+	content: '';
+	position: absolute;
+	@include sprite($we);
+	left: -100px;
+   	top: -10px;
+}
+.list--portfolio::before{
+	content: '';
+	position: absolute;
+	@include sprite($portfolio);
+	left: -100px;
+   	top: -10px;
+}
+.list--price::before{
+	content: '';
+	position: absolute;
+	@include sprite($price);
+	left: -100px;
+   	top: -10px;
+}
+.list--contact::before{
+	content: '';
+	position: absolute;
+	@include sprite($contacts);
+	left: -100px;
+   	top: -10px;
+}

@@ -41,34 +41,35 @@
 		color: #878787;
 		padding: 0 5px;
 	}
-}
-.servis--design::before{
-	content: "";
-	position: absolute;
-    top: 20px;
-    right: 65px;
-	@include sprite($design);
-}
-.servis--secutity::before{
-	content: "";
-	position: absolute;
-    top: 20px;
-    right: 75px;
-	@include sprite($security);
-}
-.servis--featlist::before{
-	content: "";
-	position: absolute;
-    top: 20px;
-    right: 68px;
-	@include sprite($featlist);
-}
-.servis--ideas::before{
-	content: "";
-	position: absolute;
-    top: 20px;
-    right: 74px;
-	@include sprite($idea);
+
+	&--design::before{
+		content: "";
+		position: absolute;
+	    top: 20px;
+	    right: 65px;
+		@include sprite($design);
+	}
+	&--secutity::before{
+		content: "";
+		position: absolute;
+	    top: 20px;
+	    right: 75px;
+		@include sprite($security);
+	}
+	&--featlist::before{
+		content: "";
+		position: absolute;
+	    top: 20px;
+	    right: 68px;
+		@include sprite($featlist);
+	}
+	&--ideas::before{
+		content: "";
+		position: absolute;
+	    top: 20px;
+	    right: 74px;
+		@include sprite($idea);
+	}
 }
 
 

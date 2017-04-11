@@ -23,34 +23,37 @@
 			margin-bottom: 15px;
 			position: relative;
 		}
+	}
 
-		.tablet__unicle:before{
-			content: "";
-			position: absolute;
-			left: -30px;
-			top: 5px;
-			@include sprite($first);
-		}
-		.tablet__technologies:before{
-			content: "";
-			position: absolute;
-			left: -30px;
-			top: 5px;
-			@include sprite($second);
-		}
-		.tablet__terms:before{
-			content: "";
-			position: absolute;
-			left: -30px;
-			top: 5px;
-			@include sprite($third);
-		}
-		.tablet__communications:before{
-			content: "";
-			position: absolute;
-			left: -30px;
-			top: 5px;
-			@include sprite($four);
-		}
+	&__unicle:before{
+		content: "";
+		position: absolute;
+		left: -30px;
+		top: 5px;
+		@include sprite($first);
+	}
+
+	&__technologies:before{
+		content: "";
+		position: absolute;
+		left: -30px;
+		top: 5px;
+		@include sprite($second);
+	}
+
+	&__terms:before{
+		content: "";
+		position: absolute;
+		left: -30px;
+		top: 5px;
+		@include sprite($third);
+	}
+
+	&__communications:before{
+		content: "";
+		position: absolute;
+		left: -30px;
+		top: 5px;
+		@include sprite($four);
 	}
 }
